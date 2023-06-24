@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Portal</title>
+</head>
+
+<body>
+    <h1>Current Word: {{ current_word }}</h1>
+    <form method="POST" action="/admin">
+        <label for="word">New Word:</label>
+        <input type="text" id="word" name="word">
+        <input type="submit" value="Update">
+    </form>
+</body>
+
+</html>

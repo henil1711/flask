@@ -1,14 +1,8 @@
 {
-  "builds":[
-    {
-      "src":"FLASK/main.py",
-      "use" : "@vercel/python"
+  "functions": {
+    "FLASK/**/*.py": {
+      "runtime": "python3.11.1",
+      "maxDuration": 10
     }
-  ],
-  "routes": [
-    {
-      "src":"/(.*)",
-      "dest": "FLASK/main.py"
-    }
-  ]
+  }
 }

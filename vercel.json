@@ -1,5 +1,14 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/main" }
+  "builds":[
+    {
+      "src":"FLASK/main.py",
+      "use" : "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src":"/(.*)",
+      "dest": "FLASK/main.py"
+    }
   ]
 }

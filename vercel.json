@@ -1,13 +1,13 @@
 {
   "builds":[
     {
-      "src":"FLASK/main.py",
-      "use" : "@vercel/python"
+      "src": "FLASK/main.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src":"/(.*)",
+      "src":"FLASK/main.py",
       "dest": "FLASK/main.py"
     }
   ]
